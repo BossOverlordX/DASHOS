@@ -1,0 +1,14 @@
+v1.2
+- added changelog existence checker and auto-repair
+- added 'changelog' command
+- added 'version' command
+- added text that shows <DASHOS> version on startup
+- added 'ls [full directory path]' command
+- added 'ls ?[directory in the current directory]'
+- added 'os [cmd]' command to allow admins to run commands that interact directly with the os library
+
+v1.1
+- moved gaminghub to seperate file
+- fixed bugs with tic-tac-toe
+- added 'clear' command
+- added a changelog
