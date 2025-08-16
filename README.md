@@ -1,17 +1,28 @@
-# DASHOS v1.2 - A Security-Hardened Command-Line Shell
+# DASHOS v1.3 BETA - A Security-Hardened Command-Line Shell
 
 [![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-green.svg)](LICENSE)
 
 DASHOS is a multi-user command-line shell built from scratch in Python. It initially started as a small project I was doing for fun, to build on my Python skills, although as my interest in programming expanded, so did the size of this project. It simulates a basic operating system environment with a strong emphasis on security principles.
 
-**Note:** This project was developed and tested primarily in a Unix-like environment. The current Windows version is considered **unstable** due to differences in terminal behavior and file system interactions. For the best experience, please run DASHOS in a Unix-based terminal.
+## Screenshots
 
-## Live Demo
+**Log in**
 
-COMING SOON
+![Screenshot showing the login page for DASHOS](Assets/Login.png)
 
-![DASHOS Demo GIF](./demo.gif)
+**CLI Prompt**
+
+![Screenshot showing some example terminal commands in DASHOS](Assets/Terminal1.png)
+
+![Screenshot showing some example terminal commands in DASHOS](Assets/Terminal2.png)
+
+**GamingHub**
+
+![Screenshot showing the splash screen for the Gaming Hub](Assets/GamingHub1.png)
+
+![Screenshot showing an example game (Hangman)](Assets/GamingHub2.png)
+
 
 ## Key Features
 
@@ -43,16 +54,18 @@ COMING SOON
 
 ## File System Structure
 ```
-DASHOS/
-├── Accounts/
-│ ├── Account0/
-│ │ ├── account0 # Hashed credentials for the default user
-│ │ └── config # User-specific color and theme settings
-│ ├── adminaccount # Hashed credentials for the root/admin user
-│ └── numusers # System file tracking the total number of accounts
+DASHOS-CLI/
+├── DASHOS/
+│   ├── numusers                        # Tracks the total number of user accounts
+│   ├── Accounts/                       # Contains all user account information
+│   │   ├── adminaccount                # Hashed credentials for the admin
+│   │   ├── Account0/                   # Directory for a specific standard user
+│   │   │   ├── account0                # Hashed credentials for the user 'account0'
+│   │   │   └── config                  # User-specific settings
+│
+├── main.py                             # Main application
+├── gaminghub.py                        # Gaming module
 ├── changelog
-├── gaminghub.py # The gaming module
-├── main.py # The main application
 └── LICENSE
 ```
 
@@ -69,7 +82,7 @@ DASHOS/
 2.  **Clone the Repository:**
     ```bash
     git clone https://github.com/BossOverlordX/DASHOS.git
-    cd DASHOS/CODE
+    cd DASHOS
     ```
 
 3.  **Install Dependencies:**
