@@ -1,5 +1,13 @@
+v1.3 BETA
+- aquired LICENSE
+- added 'license' command
+- added 'LICENSE' file existence checker
+- fixed 'create' command bug when entering spaces or nothing as filename
+- now tells you about the 'help' command when first entering CLI
+- fixed 'cd .' bug
+
 v1.2
-- added changelog existence checker and auto-repair
+- added changelog existence checker and auto-repair to allow <DASHOS> to function correctly
 - added 'changelog' command
 - added 'version' command
 - added text that shows <DASHOS> version on startup
