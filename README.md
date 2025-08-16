@@ -15,7 +15,7 @@ COMING SOON
 
 ## Key Features
 
-  -  **Multi-User Environment:** After logging in with the default credentials, any number of users can be added, and all their information will be saved.
+  -  **Multi-User Environment:** After logging in with the default credentials, 9 additional users can be added (10 total), and all their information will be saved.
   -  **Secure Authentication:** All passwords are hashed and when entered are 'invisible' (because of `getpass`).
   -  **Admin/Sudo Privileges:** Prevents privileged tasks from being run by unprivileged users, the `sudo` command allows a user to, for the rest of the session, be treated as an admin.
   -  **Hierarchical File System:** Intuitive file system structure - users are sandboxed within their home directories (unless they are an admin).
